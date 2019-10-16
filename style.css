@@ -1,0 +1,28 @@
+#meme {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+}
+
+#textTop {
+	top: 0;
+	text-shadow: 2px 0px 8px #000;
+}
+
+#textBottom {
+	bottom: 0;
+	text-shadow: 2px 1px 9px #111;
+}
+
+.inputGroup {
+	margin: 15px 0;
+}
+
+.text {
+	position: absolute;
+	color: white;
+	font-size: 35px;
+	margin: 5px 0;
+	text-transform: uppercase;
+	font-family: Coda;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meme maker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Coda:800&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Il mio primo MEME maker</h1>
+
+	<p>Istruzioni:</p>
+	<ol>
+		<li>Carica la tua immagine</li>
+		<li>Modifica il testo</li>
+		<li>Salva il tuo MEME</li>
+	</ol>
+
+	<form>
+		<input type="file" name="imageUpload" id="imageUpload" oninput="handleUpload(event)">
+
+		<div class="inputGroup">
+			<label for="inputTextTop">Testo sopra:</label>
+			<input type="text" name="inputTextTop" id="inputTextTop" oninput="handleChangeText(event, 'textTop')">
+		</div>
+
+		<div class="inputGroup">
+			<label for="inputTextBottom">Testo sotto:</label>
+			<input type="text" name="inputTextBottom" id="inputTextBottom" oninput="handleChangeText(event, 'textBottom')">
+		</div>
+	</form>
+
+	<div id="meme">
+		<img src="http://placekitten.com/400/300" id="memeImage">
+		<p class="text" id="textTop">Testo sopra</p>
+		<p class="text" id="textBottom">Testo sotto</p>
+	</div>
+
+	<div class="inputGroup">
+		<button onclick="handleSaveImage()">Salva meme</button>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+</body>
+</html>
